@@ -146,7 +146,7 @@ body{
 /* Section 3 */
 section{
     width: 100%;
-    height: 100vh;
+    height: 55vh;
     margin-top: 50px;
 }
 section a{
@@ -201,4 +201,61 @@ section a{
 .card:hover .card-footer{
     border: none;
     background-color: rgb(255, 238, 0);
+}
+/* Section 4 */
+.docs{
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    background-color: rgb(197, 196, 196);
+    color: yellow;
+    padding-top: 10px;
+}
+.docs h1{
+    font-size: 3rem;
+    margin: 50px 0;
+    color: #000;
+
+}
+.container1{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card1{
+    width: 30%;
+    height: 100%;
+    padding: 40px;
+}
+.card1 i{
+    text-align: center;
+    font-size: 6rem;
+}
+.card1 h5{
+    font-size: 1.5rem;
+    margin: 20px 0;
+    font-weight: 600;
+    height: 60px;
+    width: 100%;
+}
+.card1 p{
+    color: #000;
+    font-size: 1.2rem;
+    height: 100px;
+    width: 100%;
+}
+.card1 .btn{
+    border-radius: 30px;
+    padding: 5px 50px;
+    border: 2px solid yellow;
+    color: yellow;
+    font-size:1.5rem;
+    font-weight: 600;
+}
+.card1:hover .btn{
+    background-color: yellow;
+    color: #000;
 }
