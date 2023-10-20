@@ -1,13 +1,15 @@
 *{
     margin: 0;
     padding: 0;
-    text-decoration: none;
 }
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #f2f2f2;
     padding: 65px 0 0 0;
     overflow-y: scroll;
+}
+a{
+    text-decoration: none;
 }
 /* Navbar */
 .navbar{
@@ -17,7 +19,6 @@ body{
 .navbar-brand{
     font-size: 1.7rem;
     font-weight: 500;
-    /* margin: 0 5px; */
 }
 .navbar-brand img{
     width: 30px;
@@ -49,6 +50,90 @@ body{
     cursor: pointer;
     color: #000;
 }
+/* Login Form down*/
+.modal-content{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+.modal-header{
+    border: none;
+}
+.modal-header .btn-close{
+    transform: translateY(-30px);
+}
+.modal-header h1{
+    font-weight: 600;
+    position: relative;
+    left: 35%;
+}
+.modal-body{
+    display: flex;
+    flex-direction: column;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+}
+.modal-body label{
+    font-size: 1.2rem;
+}
+.modal-body input{
+    width: 100%;
+    height: 50px;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    margin: 5px 0 15px;
+}
+.modal-body #sqr{
+    width: 120px;
+    height: 20px;
+    margin: 0 auto;
+    position: relative;
+    top:-23px;
+    background-color: #fff;
+}
+.modal-body a{
+    text-align: start;
+    font-size: 1rem;
+    color: #005cfc;
+    margin:-5px 0 10px 0;
+}
+.modal-body .btn-warning{
+    font-size: 1.2rem;
+    border-radius: 25px;
+    color: #000;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.modal-body p{
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px 0;
+    padding-bottom: 15px;
+    border-bottom: 2px solid gray;
+}
+.modal-body div{
+    display: flex;
+    justify-content: space-evenly;
+    height: 20%;
+}
+.modal-body .log{
+    width: 45%;
+    height: 40px;
+    border: 2px solid gray;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    background:none;
+}
+.modal-body img{
+    margin: -3px 5px 0 0;
+}
+ /* Login form Up */ 
 /* Section 1 */
 .can img{
     position: relative;
@@ -105,46 +190,6 @@ body{
     font-size: 1.3rem;
     margin: 10px 0;
 }
-/* Login Form down*/
-.modal-content{
-    width: 50vw;
-    height: 70vh;
-    background-color: #fff;
-    border-radius: 20px;
-    /* box-shadow: 0 0 10px rgba(0,0,0,0.3); */
-    padding: 20px;
-}
-.modal-header{
-    border: none;
-}
-.modal-header .btn-close{
-    position: relative;
-    top: -40px;
-    left: 5%;
-}
-.modal-header h1{
-    font-weight: 600;
-    position: relative;
-    left: 30%;
-}
-.modal-body{
-    display: flex;
-    flex-direction: column;
-}
-.modal-body label{
-    font-size: 1.2rem;
-    /* margin: 5px 0; */
-}
-.modal-body input{
-    width: 100%;
-    height: 40px;
-    font-size: 1.2rem;
-    padding: 0 10px;
-    border-radius: 10px;
-    border: 2px solid gray;
-    margin: 5px 0 15px;
-}
-
 /* Section 2  Containers*/
 .container{
     width: 60vw;
@@ -185,11 +230,6 @@ body{
     border: 3px solid yellow;
 }
 /* Section 3 */
-section{
-    width: 100%;
-    height: 55vh;
-    margin-top: 50px;
-}
 section a{
     text-align: center;
     text-decoration: none;

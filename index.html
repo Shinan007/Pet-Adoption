@@ -24,15 +24,77 @@
         <div class="navbar-nav" id="testing">
           <a href="#" class="nav-link">Home</a>
           <a href="#about" class="nav-link" >Abouts</a>
-          <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#popup">Pets</a>
-          <a href="#" class="nav-link" >Adopt</a>
+          <a href="#Pets" class="nav-link">Pets</a>
+          <a href="#" class="nav-link" >Contact</a>
         </div>
         <div class="user">
-          <span id="mark"><a href="#">Sign up</a></span>
+          <span id="mark"><a href="#" data-bs-toggle="modal" data-bs-target="#signup">Sign up</a></span>
           <span><a href="#" data-bs-toggle="modal" data-bs-target="#login">Log in</a></span>
         </div>
       </div>
     </nav>
+    <!-- Login / Sign up  Form -->
+    <section>
+      <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 id="loginlabel">Log in</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <label for="email">Email</label>
+                <input type="email" id="email"  name="em" placeholder="email" value="">
+                <label for="pass">Password</label>
+                <input type="password" id="pass"  name="pas" placeholder="password" value="">
+                <a href="#">Forgot Password?</a>
+                <button class="btn btn-warning " type="submit"> Log in</button>
+                <p>Don't have an account? <a href="#">Sign up</a></p>
+                <div id="sqr"><span>Or log in with</span></div>
+                <div class="option">
+                  <button class="log"><img src="assets/googleicon.png" alt="" width="15"> Google</button> <button class="log"><img src="assets/facebookicon.png" alt="" width="15"> Facebook</button>
+                </div>
+              </div>
+            </div>
+            </div>
+      </div>
+      <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content col">
+            <div class="modal-header">
+              <h1 id="loginlabel">Sign up</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                  <div class="cont col-md-6">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname"  name="fn" placeholder="First name" value="">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname"  name="ln" placeholder="Last name" value="">
+                  <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone"  name="ph" placeholder="phone number" value="">
+                  
+                  </div>
+                  <div class="cont col-md-6">
+                    <label for="email">Email</label>
+                  <input type="email" id="email"  name="em" placeholder="email" value="">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass"  name="pas" placeholder="password" value="">
+                    <label for="cpass">Confirm Password</label>
+                    <input type="password" id="cpass"  name="cpas" placeholder="confirm password" value="">
+                  </div>
+                </div>
+                <button class="btn btn-warning " type="submit"> Sign up</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+                <div id="sqr"><span>Or sign up with</span></div>
+                <div class="option">
+                <button class="log"><img src="assets/googleicon.png" alt="" width="15"> Google</button> <button class="log"><img src="assets/facebookicon.png" alt="" width="15"> Facebook</button>
+            </div>
+          </div>
+          </div>
+      </div>
+    </section>
     <main>
       <div class="can">
         <img src="assets/bg3.jpg">
@@ -66,7 +128,7 @@
           </div>
         </div>
       </div>
-      <section>
+      <section data-bs-spy="scroll" data-bs-target="#pets" id="Pets" >
         <a href="#"><p>Pets Available for Adoption Nearby ></p></a>
         <div class="nearby">
           <div class="card" style="width: 15rem;">
@@ -116,7 +178,7 @@
             <i class="fa-regular fa-heart"></i>
             <h5>COVIDE-19 RESOURCES</h5>
             <p>Learn how shelters/rescue groups are adapting. Find out how you can help dogs and cats.</p>
-            <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#login">Learn More</button>
+            <button type="button" class="btn btn-outline-warning">Learn More</button>
           </div>
           <div class="card1">
             <i class="fa-solid fa-house"></i>
@@ -126,24 +188,6 @@
           </div>
         </div>
       </section>
-      <!-- Login Form -->
-    <section>
-      <div class="modal" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-content">
-            <div class="modal-header">
-              <h1 id="loginlabel">Log in</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <label for="email">Email</label>
-              <input type="email" id="email"  name="em" placeholder="email" value="">
-              <label for="pass">Password</label>
-              <input type="password" id="pass"  name="pas" placeholder="password" value="">
-              <button class="btn btn-warning" type="submit"> Log in</button>
-            </div>
-          </div>
-      </div>
-    </section>
     <!-- Additional Links -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="app.js"></script>
