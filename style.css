@@ -36,7 +36,7 @@ a{
 }
 .user span{
     margin: 0 20px;
-    padding: 0 8px;
+    padding: 0 10px;
     opacity: 0.7;
 }
 .user img{
@@ -154,6 +154,11 @@ a{
     background-color: white;
     border-radius: 10px;
 }
+.search form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 .search input{
     width: 45%;
     height: 50px;
@@ -230,6 +235,13 @@ a{
     border: 3px solid yellow;
 }
 /* Section 3 */
+#Pets{
+    width: 100%;
+    height: a;
+    /* background-color: #fff; */
+    padding: 20px;
+
+}
 section a{
     text-align: center;
     text-decoration: none;
@@ -239,7 +251,7 @@ section a{
 }
 .nearby{
     width: 100%;
-    height: 50vh;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -247,9 +259,10 @@ section a{
 }
 .nearby .card{
     overflow: hidden;
-    margin: 0 5px;
+    margin: 10px 10px;
     border-radius: 30px;
     transition: all 0.3s ease;
+    width: 238px;
 }
 .card-body{
     text-align: center;
@@ -259,7 +272,7 @@ section a{
 }
 .card i{
     text-align: center;
-    font-size: 5rem;
+    font-size: 3.5rem;
     color: #000;
     margin: 40px 0;
 }
@@ -267,12 +280,14 @@ section a{
     font-size: 1.2rem;
     color: #000;
 }
+#meet{
+    width:238px;
+}
 .card-footer{
     background-color: yellow;
-    height: 100px;
-    margin: -30px 0 0 0;
+    height: 60px;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 .card:hover{
@@ -286,7 +301,7 @@ section a{
 /* Section 4 */
 .docs{
     width: 100%;
-    height: 80vh;
+    height: 100%;
     text-align: center;
     background-color: rgb(197, 196, 196);
     color: yellow;
@@ -300,7 +315,7 @@ section a{
 }
 .container1{
     width: 100%;
-    height: 60%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -339,4 +354,151 @@ section a{
 .card1:hover .btn{
     background-color: yellow;
     color: #000;
+}
+/* Media Querry for max-width 1025px */
+@media(max-width:1025px){
+    .navbar-brand{
+        font-size: 1.rem;
+    }
+    .user{
+        text-align: center;
+    }
+    .user span{
+        margin:0 5px;
+    }
+    .container1 .card1{
+        width: 300px;
+        height: 100%;
+        padding: 20px;
+    }
+    .nearby .card{
+        margin: 10px 10px;
+    }
+}
+/* Media Querry for max-width 740px */
+@media(max-width:740px){
+
+    .user{
+        border: none;
+        /* margin: none; */
+        text-align: left;
+    }
+    .user span{
+        margin:0 10px;
+    }
+    .can img{
+        height: 40vh;
+    }
+    .search{
+        top: 12%;
+        left: 20%;
+        right: 20%;
+        width: 60%;
+        height: 55px;
+    }
+    .search input{
+        width: 90%;
+        height: 40px;
+        font-size: 1rem;
+    }
+    #pin{
+        display: none;
+    }
+    .search button{
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        /* margin-bottom: 5px; */
+    }
+    .text h1{
+        font-size: 2rem;
+    }
+    .text p{
+        font-size: 1rem;
+    }
+    .container{
+        width: 100%;
+        height: 150px;
+    }
+    .container .box{
+        width: 150px;
+        height: 120px;
+    }
+    .container .box i{
+        font-size: 4rem;
+    }
+    .container .box p{
+        font-size: 1rem;
+    }
+    .nearby{
+        height: 100%;
+    }
+    .nearby .card{
+        margin: 10px 5px;
+    }
+    .docs{
+        width: 100%;
+    }
+    .docs h1{
+        font-size: 2rem;
+    }
+    .container1{
+        width: 100%;
+    }
+    .container1 .card1{
+        width: 80%;
+        height: 100%;
+        padding: 20px;
+    }
+    .card1 i{
+        font-size: 5rem;
+    }
+    .card1 h5{
+        font-size: 1.2rem;
+        margin: 10px 0;
+        height: 40px;
+    }
+    .card1 p{
+        font-size: 1rem;
+        height: 80px;
+    }
+    .card1 button{
+        font-size: 1.2rem;
+        padding: 5px 30px;
+    }
+}
+/* Media Querry for max-width 500px */
+@media(max-width:540px){
+    .can img{
+        height: 45vh;
+    }
+    #Pets{
+        padding: 0;
+    }
+    .nearby .card{
+        width: 45%;
+    }
+    .nearby .card-text{
+        font-size: 1.2rem;
+    }
+    .nearby .card i{
+        font-size: 3.6rem;
+    }
+    .nearby .card #text2{
+        font-size: 1rem;
+    }
+    .nearby .card-footer{
+        font-size: 1rem;
+    }
+    .nearby #meet{
+        width: 100%;
+    }
+    .text-success{
+        height: 250px;
+    }
+    .card .card-footer{
+        font-size: 1.2rem;
+        text-align: center;
+        height: 40%;
+    }
 }

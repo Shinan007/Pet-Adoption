@@ -12,16 +12,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-expand-md" id="items" >
+    <nav class="navbar fixed-top navbar-expand-md" >
       <div class="container-fluid">
         <a href="#" class="navbar-brand">
           <img src="assets/logo.png" alt="#" class="d-inline-block align-text-top">Adoption</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#items">
-          <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#items" aria-controls="navbarNavAltMarkup" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-      <div class="collapse  navbar-collapse">
-        <div class="navbar-nav" id="testing">
+      <div class="collapse  navbar-collapse" id="items">
+        <div class="navbar-nav">
           <a href="#" class="nav-link">Home</a>
           <a href="#about" class="nav-link" >Abouts</a>
           <a href="#Pets" class="nav-link">Pets</a>
@@ -101,7 +101,7 @@
         <div class="search">
           <form action="#">
             <input type="search" placeholder="Search Terier, Kitten">
-            <input type="search"placeholder="Enter City, Pincode">
+            <input type="search" id="pin" placeholder="Enter City, Pincode">
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
           </form>
           <div class="text">
@@ -131,31 +131,31 @@
       <section data-bs-spy="scroll" data-bs-target="#pets" id="Pets" >
         <a href="#"><p>Pets Available for Adoption Nearby ></p></a>
         <div class="nearby">
-          <div class="card" style="width: 15rem;">
+          <div class="card">
             <img src="assets/Cat.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">Cat</p>
             </div>
           </div>
-          <div class="card" style="width: 15rem;">
+          <div class="card">
             <img src="assets/pug.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">Cat</p>
             </div>
           </div>
-          <div class="card" style="width: 15rem;">
+          <div class="card" >
             <img src="assets/dog.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">Cat</p>
             </div>
           </div>
-          <div class="card" style="width: 15rem;">
+          <div class="card">
             <img src="assets/puppy.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">Cat</p>
             </div>
           </div>
-          <div class="card" style="width: 15rem; height: 306px;">
+          <div class="card" id="meet">
             <div class="card-body text-success">
               <i class="fa-solid fa-paw"></i>
               <p id="text2">69 more pets availabe on pet finder</p>
