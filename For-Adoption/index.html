@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dogs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-md" >
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">
+            <img src="/Pet-Adoption/assets/logo.png" alt="#" class="d-inline-block align-text-top">Adoption</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#items" aria-controls="navbarNavAltMarkup" aria-expanded="false">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse  navbar-collapse" id="items">
+          <div class="navbar-nav">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#about" class="nav-link" >Abouts</a>
+            <a href="#Pets" class="nav-link">Pets</a>
+            <a href="#" class="nav-link" >Contact</a>
+          </div>
+          <div class="user">
+            <span id="mark"><a href="#" data-bs-toggle="modal" data-bs-target="#signup">Sign up</a></span>
+            <span><a href="#" data-bs-toggle="modal" data-bs-target="#login">Log in</a></span>
+          </div>
+        </div>
+      </nav>
+      <!-- Login / Sign up  Form -->
+      <section>
+        <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 id="loginlabel">Log in</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <label for="email">Email</label>
+                  <input type="email" id="email"  name="em" placeholder="email" value="">
+                  <label for="pass">Password</label>
+                  <input type="password" id="pass"  name="pas" placeholder="password" value="">
+                  <a href="#">Forgot Password?</a>
+                  <button class="btn btn-warning " type="submit"> Log in</button>
+                  <p>Don't have an account? <a href="#">Sign up</a></p>
+                  <div id="sqr"><span>Or log in with</span></div>
+                  <div class="option">
+                    <button class="log"><img src="/Pet-Adoption/assets/googleicon.png" alt="" width="15"> Google</button> <button class="log"><img src="/Pet-Adoption/assets/facebookicon.png" alt="" width="15"> Facebook</button>
+                  </div>
+                </div>
+              </div>
+              </div>
+        </div>
+        <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content col">
+              <div class="modal-header">
+                <h1 id="loginlabel">Sign up</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                    <div class="cont col-md-6">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname"  name="fn" placeholder="First name" value="">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname"  name="ln" placeholder="Last name" value="">
+                    <label for="phone">Phone Number</label>
+                      <input type="tel" id="phone"  name="ph" placeholder="phone number" value="">
+                    
+                    </div>
+                    <div class="cont col-md-6">
+                      <label for="email">Email</label>
+                    <input type="email" id="email"  name="em" placeholder="email" value="">
+                      <label for="pass">Password</label>
+                      <input type="password" id="pass"  name="pas" placeholder="password" value="">
+                      <label for="cpass">Confirm Password</label>
+                      <input type="password" id="cpass"  name="cpas" placeholder="confirm password" value="">
+                    </div>
+                  </div>
+                  <button class="btn btn-warning " type="submit"> Sign up</button>
+                  <p>Already have an account? <a href="#">Log in</a></p>
+                  <div id="sqr"><span>Or sign up with</span></div>
+                  <div class="option">
+                  <button class="log"><img src="/Pet-Adoption/assets/googleicon.png" alt="" width="15"> Google</button> <button class="log"><img src="/Pet-Adoption/assets/facebookicon.png" alt="" width="15"> Facebook</button>
+              </div>
+            </div>
+            </div>
+        </div>
+      </section>
+      <!-- Filter Section -->
+        <section id="display">
+            <div class="wrapper">
+                <div class="parts">
+                    <h5>Breed</h5>
+                    <div class="btn-group">
+                        <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Any
+                        </button>
+                          <ul class="dropdown-menu">       
+                              <li>
+                                  <div class="dropdown-item">
+                                      <i class="fa-solid fa-magnifying-glass"></i>
+                                      <input type="search" name="breed" id="search" placeholder="Search by Bread">
+                                  </div>
+                              </li>
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action Another action Another action Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                    </div>
+                </div>
+                <div class="parts">
+                    <h5>Age</h5>
+                    <div class="btn-group">
+                        <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Any
+                        </button>
+                          <ul class="dropdown-menu">       
+                              <li>
+                                  <div class="dropdown-item">
+                                      <i class="fa-solid fa-magnifying-glass"></i>
+                                      <input type="search" name="breed" id="search" placeholder="Search by Bread">
+                                  </div>
+                              </li>
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action Another action Another action Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                    </div>
+                </div>
+                <div class="parts">
+                    <h5>Size</h5>
+                    <div class="btn-group">
+                        <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Any
+                        </button>
+                          <ul class="dropdown-menu">       
+                              <li>
+                                  <div class="dropdown-item">
+                                      <i class="fa-solid fa-magnifying-glass"></i>
+                                      <input type="search" name="breed" id="search" placeholder="Search by Bread">
+                                  </div>
+                              </li>
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action Another action Another action Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                    </div>
+                </div>
+                <div class="parts">
+                    <h5>Gender</h5>
+                    <div class="btn-group">
+                        <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Any
+                        </button>
+                          <ul class="dropdown-menu">       
+                              <li>
+                                  <div class="dropdown-item">
+                                      <i class="fa-solid fa-magnifying-glass"></i>
+                                      <input type="search" name="breed" id="search" placeholder="Search by Bread">
+                                  </div>
+                              </li>
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action Another action Another action Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                    </div>
+                </div>
+          </div>
+          <div class="wrapper2">
+            <div class="sort">
+                <select name="sortby" id="sorting" aria-placeholder="sort ny">
+                    <h5>Sort by:</h5>
+                    <option value="bst">Best</option>
+                    <option value="new">Newest Addition</option>
+                    <option value="old">Oldest Addition</option>
+                    <option value="near">Nearest</option>
+                    <option value="fur">Furthest</option>
+                    <option value="rand">Random</option>
+                </select>
+            </div>
+            <div class="nearby">
+                <div class="card">
+                  <img src="/Pet-Adoption/assets/Cat.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Cat</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="/Pet-Adoption/assets/pug.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Cat</p>
+                  </div>
+                </div>
+                <div class="card" >
+                  <img src="/Pet-Adoption/assets/dog.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Cat</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="/Pet-Adoption/assets/puppy.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Cat</p>
+                  </div>
+                </div>
+                <div class="card" >
+                    <img src="/Pet-Adoption/assets/dog.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Cat</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="/Pet-Adoption/assets/puppy.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Cat</p>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <img src="/Pet-Adoption/assets/dog.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Cat</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="/Pet-Adoption/assets/puppy.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Cat</p>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <img src="/Pet-Adoption/assets/dog.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Cat</p>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="/Pet-Adoption/assets/puppy.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Cat</p>
+                    </div>
+                  </div>
+                  
+                <div class="card" id="meet">
+                  <div class="card-body text-success">
+                    <i class="fa-solid fa-paw"></i>
+                    <p id="text2">69 more pets availabe on pet finder</p>
+                    <p class="card-text"></p>
+                  </div>
+                  <div class="card-footer" >Meet Them</div>
+                </div>
+              </div>
+          </div>
+        </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
