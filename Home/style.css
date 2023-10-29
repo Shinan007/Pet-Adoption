@@ -65,7 +65,7 @@ a{
 .modal-header h1{
     font-weight: 600;
     position: relative;
-    left: 35%;
+    left: 39%;
 }
 .modal-body{
     display: flex;
@@ -133,7 +133,7 @@ a{
 .modal-body img{
     margin: -3px 5px 0 0;
 }
- /* Login form Up */ 
+/* Login form Up */
 /* Section 1 */
 .can img{
     position: relative;
@@ -355,6 +355,105 @@ section a{
     background-color: yellow;
     color: #000;
 }
+/* Footer*/
+.foot{
+    width: 100%;
+    height: 50vh;
+    background-color: yellow;
+    padding: 30px;
+}
+.foot .container-fluid{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+}
+.foot .pages{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.foot #brand{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    padding-left: 10px;
+}
+.foot #btm{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #000;
+    padding-left: 10px;
+    text-align: center;
+}
+.foot .pages .items{
+    width: 25%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+.pages ul{
+    list-style: none;
+    padding: 0;
+    height: 100%;
+}
+.pages li{
+    padding: 5px 5px 5px 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+.pages a{
+    font: 1.2rem;
+    text-decoration: none;
+    color: #000;
+}
+.foot .mail{
+    width:25%;
+    padding: 20px;
+}
+.box{
+    height: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.foot .btn{
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(40, 39, 39);
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+/* 2nd Footer */
+.accordion{
+    display:none;
+}
+.accordion-button{
+    font-size: 1.2rem;
+    background-color: yellow;
+    /* border: 2px solid gray; */
+}
+.accordion-body{
+    background-color: #ffc107;
+    font-size: 1rem;
+}
+.accordion-body ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+.accordion-body a{
+    color: #000;
+    font-size: 1.4rem;
+}
+
 /* Media Querry for max-width 1025px */
 @media(max-width:1025px){
     .navbar-brand{
@@ -466,6 +565,12 @@ section a{
         font-size: 1.2rem;
         padding: 5px 30px;
     }
+    .view{
+        display: none;
+    }
+    .accordion{
+        display:contents;
+    }
 }
 /* Media Querry for max-width 500px */
 @media(max-width:540px){
@@ -501,79 +606,4 @@ section a{
         text-align: center;
         height: 40%;
     }
-}
-.foot{
-    width: 100%;
-    height: 50vh;
-    background-color: yellow;
-    padding: 30px;
-}
-.foot .container-fluid{
-    width: 100%;
-    height: 30vh;
-    display: flex;
-    padding: 0;
-    justify-content: space-between;
-}
-.foot .pages{
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
-}
-.foot #brand{
-    font-size: 2rem;
-    font-weight: bold;
-    color: #000;
-    padding-left: 10px;
-}
-.foot #btm{
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #000;
-    padding-left: 10px;
-    text-align: center;
-}
-.foot .pages .items{
-    width: 25%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-}
-.pages ul{
-    list-style: none;
-    padding: 0;
-    height: 100%;
-}
-.pages li{
-    padding: 5px 5px 5px 0;
-    cursor: pointer;
-    text-decoration: none;
-}
-.pages a{
-    font: 1.2rem;
-    text-decoration: none;
-    color: #000;
-}
-.foot .mail{
-    width:25%;
-    padding: 20px;
-}
-.box{
-    height: 100%;
-    border-radius: 20px;
-    padding: 20px;
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-.foot .btn{
-    width: 80%;
-    height: 50px;
-    border-radius: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    color: rgb(40, 39, 39);
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
