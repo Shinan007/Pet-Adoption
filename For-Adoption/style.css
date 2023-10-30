@@ -158,6 +158,7 @@ a{
     width: 250px;
     height: 50px;
     border: none;
+    padding-right: 100px;
     border-radius: 10px;
     font-size: 1.5rem;
     font-weight: 500;
